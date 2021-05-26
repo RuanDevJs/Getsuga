@@ -1,0 +1,271 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+}
+
+.header {
+  background-color: #fff;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 16%);
+  padding: 12px;
+}
+
+.header-container {
+  max-width: 960px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 0;
+}
+
+.header-container > h1 a {
+  font-family: "Roboto";
+  font-weight: 900;
+  font-size: 50px;
+  color: #10b568;
+  letter-spacing: 2px;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+}
+
+.menu > li > a {
+  display: block;
+  margin: 0 20px;
+  padding: 12px;
+  font-family: "Roboto";
+  font-size: 15px;
+  font-weight: 200;
+  color: #c2c2c2;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  transition: 0.5s ease-out;
+}
+
+.menu > li > a:hover {
+  color: #1f1f1f;
+  font-size: 20px;
+}
+
+.header-container > button {
+  width: 16%;
+  border: 0;
+  outline: 0;
+  padding: 12px;
+  border-radius: 50px;
+  background-color: #10b568;
+}
+
+.header-container > button > a {
+  font-family: "Roboto";
+  font-size: 18px;
+  font-weight: 700;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  transition: ease-in 0.2s;
+}
+
+.header-container > button:hover {
+  background-color: #10b54d;
+  transition: ease-in 0.2s;
+}
+
+.header-container > button > a:hover {
+  color: #f2f2f2;
+  transition: ease-in 0.2s;
+}
+
+.intro {
+  margin: 20px 0;
+}
+
+.intro-container {
+  max-width: 960px;
+  padding: 20px;
+  margin: 0 auto;
+  box-shadow: 6px 6px 6px rgba(0, 0, 0, 16%);
+  border-radius: 20px;
+}
+
+[data-opacity] {
+  opacity: 0;
+}
+
+[data-opacity].ativo {
+  opacity: 1;
+  transition: ease-in 0.5s;
+  animation: type1 0.5s forwards;
+}
+
+.intro-container > img {
+  width: 100%;
+  height: 420px;
+}
+
+.intro-container > h1 {
+  font-family: "Roboto";
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  color: #1f1f1f;
+}
+
+.intro-container > p {
+  margin: 12px 0;
+  font-family: "Roboto";
+  font-size: 14px;
+  font-weight: 300;
+  letter-spacing: 0.5px;
+  color: #1f1f1f;
+  max-width: 420px;
+  text-align: left;
+}
+
+.produtos {
+  max-width: 960px;
+  margin: 50px auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.produtos > div {
+  margin: 0 20px;
+}
+
+.produtos > div > img {
+  width: 50%;
+  padding: 12px 0;
+}
+
+.produtos > div > h1 {
+  font-family: "Roboto";
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  color: #1f1f1f;
+  padding: 5px 0;
+}
+
+.produtos > div > p {
+  font-family: "Roboto";
+  font-size: 14px;
+  font-weight: 300;
+  letter-spacing: 0.5px;
+  color: #1f1f1f;
+  max-width: 420px;
+  text-align: left;
+}
+
+.form {
+  animation: type1 0.5s forwards;
+  transition: 0.5s ease-in;
+  display: flex;
+  justify-content: center;
+  flex-flow: column wrap;
+  padding: 32px;
+  max-width: 25%;
+  margin: 0 auto;
+}
+
+.form > label {
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 18px;
+  color: #1f1f1f;
+  letter-spacing: 2px;
+}
+
+.form > input {
+  margin: 20px 0;
+  padding: 12px;
+  outline: 0;
+  border: 2px solid #f2f2f2;
+  box-shadow: 6px 6px 6px rgba(0, 0, 0, 16%);
+  transition: ease-in 0.5s;
+  border-radius: 4px;
+  font-family: "Roboto";
+  font-weight: 300;
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+
+.form > input:hover {
+  transition: ease-in 0.5s;
+  border: 2px solid #c2c2c2;
+  border-radius: 4px;
+}
+
+.form > button {
+  background-color: #10b54d;
+  padding: 12px;
+  width: 50%;
+  margin: 0 auto;
+  border: 0;
+  outline: 0;
+  border-radius: 50px;
+}
+
+.form > button {
+  font-family: "Roboto";
+  font-weight: 900;
+  font-size: 18px;
+  text-transform: uppercase;
+  color: #f2f2f2;
+  letter-spacing: 2px;
+  transition: 0.2s ease-in;
+}
+
+.form > button:hover {
+  cursor: pointer;
+  transition: 0.2s ease-in;
+  background-color: #10b568;
+}
+
+.form > p {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 15px;
+  color: #1f1f1f;
+  letter-spacing: 1px;
+  max-width: 200px;
+  margin: 10px auto;
+  text-align: center;
+}
+
+.form > p > a {
+  color: #10b54d;
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 15px;
+  letter-spacing: 2px;
+}
+
+.container-form {
+  max-width: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1 1 100px;
+}
+
+@keyframes type1 {
+  from {
+    opacity: 0;
+    transform: translate3d(-30px, 0, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0px, 0, 0);
+  }
+}
