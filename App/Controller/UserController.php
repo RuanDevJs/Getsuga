@@ -148,5 +148,56 @@ class UserController {
     header('location: home.php');
   }
 
-}UserController::index();
+  public static function AdmLogin($email, $password){
+
+    $sql = "SELECT * FROM administrador WHERE email = :email AND senha = :password";
+    $instance = Connect::getConn()->prepare($sql);
+    $instance->bindValue("email", $email);
+    $instance->bindValue("password", $password);
+    $instance->execute();
+   
+    if($instance->rowCount() > 0){
+     $resultado = $instance->fetchAll(PDO::FETCH_ASSOC);
+      $_SESSION['usuario_admin'] = $resultado;
+      return header('location: home_admin.php');
+    }else{
+    return header('location: login.php');
+    }
+  }
+
+  static public function showPosts(){
+    $sql = "SELECT * FROM produtos;";
+    $instance = Connect::getConn()->prepare($sql);
+    $instance->execute();
+    $resultado = $instance->fetchAll(PDO::FETCH_ASSOC);
+    return $_SESSION["produtos_adm"] = $resultado;
+  }  
+
+  static public function showUsers(){
+    $sql = "SELECT * FROM usuarios;";
+    $instance = Connect::getConn()->prepare($sql);
+    $instance->execute();
+    $resultado = $instance->fetchAll(PDO::FETCH_ASSOC);
+    return $_SESSION["usuarios_admin"] = $resultado;
+  }  
+  
+  public static function deleteAdmin($id){
+    $sql = "DELETE FROM produtos WHERE id = :id";
+    $instance = Connect::getConn()->prepare($sql);
+    $instance->bindValue('id', $id);
+    $instance->execute();
+    header('location: home_admin.php');
+  }
+
+  public static function deleteUser($id){
+    $sql = "DELETE FROM usuarios WHERE id = :id";
+    $instance = Connect::getConn()->prepare($sql);
+    $instance->bindValue('id', $id);
+    $instance->execute();
+    header('location: home_admin.php');
+  }
+}
+UserController::index();
 UserController::productsIndex();
+UserController::showPosts();
+UserController::showUsers();

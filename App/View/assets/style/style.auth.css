@@ -589,3 +589,190 @@
   color: #1f1f1f;
   transition: 0.5s ease-in;
 }
+
+.area-configs {
+  margin: 20px;
+}
+
+.area-container {
+  max-width: 960px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+}
+
+.area-container > div {
+  max-width: 420px;
+  background-color: #fff;
+  border: 2px solid #c2c2c2;
+  border-radius: 12px;
+  margin: 12px;
+  padding: 24px;
+  text-align: center;
+  transition: 0.5s ease-in;
+}
+
+.area-container > div > h1 {
+  font-family: "Roboto";
+  font-weight: 900;
+  font-size: 32px;
+  color: #1f1f1f;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  transition: 0.5s ease-in;
+}
+
+.area-container > div > a {
+  display: block;
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 16px;
+  color: #1f1f1f;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  background-color: #f2f2f2;
+  border-radius: 50px;
+  border: 2px solid #c2c2c2;
+  padding: 20px;
+  margin: 32px;
+  transition: 0.5s ease-in;
+}
+
+.area-container > div > a:hover {
+  transition: 0.5s ease-in;
+  background-color: #10b568;
+  border: 2px solid #fff;
+  color: #fff;
+  font-weight: 700;
+}
+
+.area-container div:hover {
+  transition: 0.5s ease-in;
+  background-color: #10b54d;
+  border: 2px solid #fff;
+  color: #fff;
+  font-weight: 700;
+}
+
+.area-container h1:hover {
+  color: #fff;
+  transition: 0.5s ease-in;
+}
+
+.product {
+  margin: 20px;
+}
+
+.product-container {
+  max-width: 960px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.product-container > div {
+  padding: 20px;
+  margin: 12px;
+  background-color: #fff;
+  border: 2px solid #f2f2f2;
+  border-radius: 12px;
+  box-shadow: 6px 6px 6px rgba(0, 0, 0, 16%);
+  transition: 0.5s ease-in;
+}
+
+.product-container > div:hover {
+  border: 2px solid #c2c2c2;
+  box-shadow: 6px 6px 6px rgba(0, 0, 0, 16%);
+  transition: 0.5s ease-in;
+  cursor: pointer;
+}
+
+.product-container > div > h1 {
+  margin: 12px 0;
+  font-family: "Roboto";
+  font-weight: 900;
+  font-size: 24px;
+  color: #1f1f1f;
+  letter-spacing: 2px;
+}
+
+.product-container > div > p {
+  margin: 12px 0;
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 16px;
+  color: #1f1f1f;
+  font-style: italic;
+}
+
+.product-container > div > img {
+  max-width: 460px;
+  height: 220px;
+  padding: 24px 0;
+  border-radius: 24px;
+}
+
+.product-container > div > h2 {
+  margin: 12px 0;
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 16px;
+  color: #1f1f1f;
+  letter-spacing: 2px;
+}
+
+.users {
+  margin: 20px;
+}
+
+.users-container {
+  max-width: 960px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.users-container > div {
+  padding: 20px;
+  margin: 12px;
+  background-color: #fff;
+  border: 2px solid #f2f2f2;
+  border-radius: 12px;
+  box-shadow: 6px 6px 6px rgba(0, 0, 0, 16%);
+  transition: 0.5s ease-in;
+}
+
+.users-container > div:hover {
+  border: 2px solid #c2c2c2;
+  box-shadow: 6px 6px 6px rgba(0, 0, 0, 16%);
+  transition: 0.5s ease-in;
+  cursor: pointer;
+}
+
+.users-container > div > h1 {
+  margin: 12px 0;
+  font-family: "Roboto";
+  font-weight: 900;
+  font-size: 24px;
+  color: #1f1f1f;
+  letter-spacing: 2px;
+}
+
+.users-container > div > p {
+  margin: 12px 0;
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 16px;
+  color: #1f1f1f;
+  font-style: italic;
+}
+
+.users-container > div > h2 {
+  margin: 12px 0;
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 16px;
+  color: #1f1f1f;
+  letter-spacing: 2px;
+}
